@@ -24,9 +24,6 @@ function getBTC(){
       if (targetPrice.innerHTML != '' && targetPriceVal < res.data.BTC.USD) {
             const myNotification = new window.Notification(notification.title, notification)
         }
-    myNotification.onclick = () => {
-        console.log('clicked')
-    }
     })
 }
 getBTC()
